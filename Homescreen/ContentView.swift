@@ -27,10 +27,11 @@ struct ContentView: View {
                                 label: {
                                     Image(systemName: "photo")
                                 })
-                            .padding()
+                                
+                                .padding()
                         }
                         Button(action: {
-                            withAnimation {
+                            withAnimation(.easeInOut(duration: 0.3)) {
                                 isExpanded.toggle()
                             }
                         }, label: {
@@ -44,7 +45,7 @@ struct ContentView: View {
                                 label: {
                                     Image(systemName: "camera")
                                 })
-                            .padding()
+                                .padding()
                         }
                     }
                     .background(Color.white)
@@ -52,6 +53,7 @@ struct ContentView: View {
                     .shadow(radius: 10)
                 }
                 .frame(width: 65)
+                .padding()
             }
             .navigationTitle("Demo")
             .listStyle(PlainListStyle())
