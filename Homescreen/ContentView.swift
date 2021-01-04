@@ -48,9 +48,10 @@ struct ContentView: View {
                                 .padding()
                         }
                     }
-                    .background(Color.white)
+                    .background(Color("button"))
                     .cornerRadius(50)
-                    .shadow(radius: 10)
+                    .shadow(color: /*@START_MENU_TOKEN@*/Color("buttonShadow")/*@END_MENU_TOKEN@*/, radius: 10)
+                    //                    .shadow(radius: 10)
                 }
                 .frame(width: 65)
                 .padding()
